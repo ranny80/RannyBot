@@ -1,0 +1,16 @@
+{
+  "name": "rannybot",
+  "version": "1.0.0",
+  "description": "A moderation Discord bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "ranny80",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "ms": "^2.1.3"
+  }
+}
