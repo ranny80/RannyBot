@@ -25,4 +25,4 @@ module.exports = {
             message.channel.send("You do not have permission to mute that members.");
         }
     }
-}
+};
