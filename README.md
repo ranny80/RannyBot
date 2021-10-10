@@ -1,2 +1,2 @@
-# rannybot
-rannybot is a moderation Discord bot
+# RannyBot
+RannyBot is a moderation Discord bot
