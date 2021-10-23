@@ -6,11 +6,19 @@
   "scripts": {
     "start": "node ."
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranny80/RannyBot.git"
+  },
   "author": "ranny80",
   "license": "Apache-2.0",
   "dependencies": {
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
     "ms": "^2.1.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ranny80/RannyBot/issues"
+  },
+  "homepage": "https://github.com/ranny80/RannyBot#readme"
 }
