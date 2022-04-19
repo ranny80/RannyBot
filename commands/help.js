@@ -11,6 +11,7 @@ module.exports = {
             {name: "r!unmute", value: "Unmutes a member from the server"}
         );
 
+        // Send the embedded message
         message.channel.send(embed);
     }
 }
