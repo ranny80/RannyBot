@@ -1,6 +1,6 @@
 module.exports = {
     name: "help",
-    description: "List of commands for rannybot",
+    description: "List of commands for RannyBot",
     execute(message, args, Discord) {
         const embed = new Discord.MessageEmbed()
         .setColor("#2478b7")
@@ -13,4 +13,4 @@ module.exports = {
 
         message.channel.send(embed);
     }
-};
+}
