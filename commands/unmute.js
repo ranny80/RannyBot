@@ -1,7 +1,8 @@
 module.exports = {
     name: "unmute",
     description: "Unmutes a member from the server",
-    execute(message, args) {
+    execute(message, args) 
+    {
         if (message.member.hasPermission("MANAGE_ROLES")) {
             const member = message.mentions.users.first();
             if (member)
