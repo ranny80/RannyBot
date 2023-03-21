@@ -11,7 +11,8 @@ const prefix = process.env.PREFIX;
 client.commands = new Discord.Collection();
 
 const commandFiles = fs.readdirSync("./commands/").filter(file => file.endsWith(".js"));
-for (const file of commandFiles) {
+for (const file of commandFiles)
+{
     const command = require(`./commands/${file}`);
 
     client.commands.set(command.name, command);
@@ -35,15 +36,24 @@ client.on("message", message => {
     const command = args.toLowerCase();
 
     // Put any commands you want
-    if (command === "help") {
+    if (command === "help")
+    {
         client.commands.get("help").execute(message, args, Discord);
-    } else if (command === "kick") {
+    } 
+    else if (command === "kick")
+    {
         client.commands.get("kick").execute(message, args);
-    } else if (command === "ban") {
+    }
+    else if (command === "ban")
+    {
         client.commands.get("ban").execute(message, args);
-    } else if (command === "mute") {
+    }
+    else if (command === "mute")
+    {
         client.commands.get("mute").execute(message, args);
-    } else if (command === "unmute") {
+    }
+    else if (command === "unmute")
+    {
         client.commands.get("unmute").execute(message, args);
     }
 });
