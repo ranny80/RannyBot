@@ -1,7 +1,7 @@
 module.exports = {
     name: "unmute",
     description: "Unmutes a member from the server",
-    execute(message, args) 
+    execute(message, args)
     {
         if (message.member.hasPermission("MANAGE_ROLES")) {
             const member = message.mentions.users.first();
@@ -16,7 +16,7 @@ module.exports = {
                 message.channel.send("Please specify a member.");
             }
         }
-        else 
+        else
         {
             message.channel.send("You do not have permission to unmute that members.");
         }
